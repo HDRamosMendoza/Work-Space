@@ -1,0 +1,28 @@
+{
+  "name": "work-space",
+  "description": "Espacio de trabajo.",
+  "main": "index.js",
+  "authors": [
+    "Heber Daniel Ramos Mendoza"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Daniel",
+    "Ramos",
+    "Mendoza",
+    "GIS",
+    "SIG"
+  ],
+  "homepage": "https://github.com/HDRamosMendoza/Work-Space",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  }
+}
