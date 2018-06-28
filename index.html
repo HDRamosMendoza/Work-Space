@@ -1,627 +1,691 @@
 <!DOCTYPE html>
 <html lang="en">
-<head runat="server" id="PageHeader">
-    <title>WorkSpace - Daniel Ramos M.</title>
+    <head runat="server" id="PageHeader">
+        <title>WorkSpace - Daniel Ramos M.</title>
 
-    <!-- META-->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="ANALISTA SIG/GIS. Ingeniero en Sistemas e Informática, con especialización en Desarrollo Experto GIS (Esri - España). Analista desarrollador GIS con implementaciones en visores (nativo y web appbuilder), automatizaciones de tareas SIG/GIS (python -arcpy), aplicaciones web y móviles en tecnología ESRI - ArcGIS. " />
-    <meta name="author" content="Heber Daniel Ramos Mendoza" />
-    <meta name="keywords" content="Heber Daniel Ramos Mendoza, Daniel Ramos Mendoza, ArcGIS 10, ArcGIS Desktop, Developer GIS, GIS, Sistema de Información Geográfica, SIG, Gis Corporativo" />
-    <link rel="shortcut icon" href="img/avatar/heber-daniel-ramos-mendoza-tab.ico" />
+        <!-- META-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="ANALISTA SIG/GIS. Ingeniero en Sistemas e Informática, con especialización en Desarrollo Experto GIS (Esri - España). Analista desarrollador GIS con implementaciones en visores (nativo y web appbuilder), automatizaciones de tareas SIG/GIS (python -arcpy), aplicaciones web y móviles en tecnología ESRI - ArcGIS. " />
+        <meta name="author" content="Heber Daniel Ramos Mendoza" />
+        <meta name="keywords" content="Heber Daniel Ramos Mendoza, Daniel Ramos Mendoza, ArcGIS 10, ArcGIS Desktop, Developer GIS, GIS, Sistema de Información Geográfica, SIG, Gis Corporativo" />
+        <link rel="shortcut icon" href="img/avatar/heber-daniel-ramos-mendoza-tab.ico" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' >
-    <link rel="stylesheet" type='text/css' href="./node_modules/calcite-bootstrap/dist/css/calcite-bootstrap.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121326850-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <!-- CSS -->
+        <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' >
+        <link rel="stylesheet" type='text/css' href="./node_modules/calcite-bootstrap/dist/css/calcite-bootstrap.min.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121326850-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'UA-121326850-1');
-    </script>
+          gtag('config', 'UA-121326850-1');
+        </script>
 
-    <style>
-        .margin-container {
-            padding: 20px 5px;
-            display: table;
-      height: 100vh;
-        }
+        <style>
+            .margin-container {
+                padding: 20px 5px;
+                display: table;
+          height: 100vh;
+            }
 
-        .background-images {
-            background-image: url("./img/header-bg.jpg");
-            background-repeat: no-repeat, repeat;
-            background-size: 100% 100%;
-        }
+            .background-images {
+                background-image: url("./img/header-bg.jpg");
+                background-repeat: no-repeat, repeat;
+                background-size: 100% 100%;
+            }
 
-        .background-color {
-            background-color: rgba(253, 254, 254, 0.3); !important;
+            .background-color {
+                background-color: rgba(253, 254, 254, 0.3); !important;
 
-        }
+            }
 
-        #Pestana7 .page-header, blockquote {
-            color: white; 
-        }
+            #Pestana7 .page-header, blockquote {
+                color: white; 
+            }
 
-        #Pestana7 .page-header {
-            border-bottom: 1px solid #FDFEFE;
-        }
+            #Pestana7 .page-header {
+                border-bottom: 1px solid #FDFEFE;
+            }
 
-        #Pestana7 {
-            margin-left: 5px;
-            margin-right: 5px;
-        }
+            #Pestana7 {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
 
-        blockquote {
-            border-left: 5px solid #005e95;
-        }        
-    </style> 
-</head>
-<body class="background-images">
-    <!-- Page Content -->
-    <div class="container margin-container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="col-xs-12 col-sm-6 col-md-12">
-                    <div class="calcite-web">
-                        <div class="card-base card-profile">
-                            <div class="card-content text-center" style="padding-top:0">
-                                <div class="card-image-wrap">
-                                    <img alt="profile image" class="card-img-circle center-block" src="./img/avatar/heber-daniel-ramos-mendoza.png" width="60%" >
+            blockquote {
+                border-left: 5px solid #005e95;
+            }        
+        </style> 
+    </head>
+    <body class="background-images">
+        <!-- Page Content -->
+        <div class="container margin-container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-3">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="calcite-web">
+                            <div class="card-base card-profile">
+                                <div class="card-content text-center" style="padding-top:0">
+                                    <div class="card-image-wrap">
+                                        <img alt="profile image" class="card-img-circle center-block" src="./img/avatar/heber-daniel-ramos-mendoza.png" width="60%" >
+                                    </div>
+                                    <h6>
+                                        <strong>Heber <u>Daniel</u> Ramos Mendoza</strong>
+                                    </h6>
                                 </div>
-                                <h6>
-                                    <strong>Heber <u>Daniel</u> Ramos Mendoza</strong>
-                                </h6>
-                            </div>
-                            <div class="card-content text-center" style="padding-top:0">
-                                <a type="button" class="btn btn-warning" href="https://HDRamosMendoza.github.io/Perfil-Profesional/" target="_blank" title="Perfil Profesional">
-                                    <span class="glyphicon glyphicon-new-window"></span>
-                                    Perfil Profesional
-                                </a>
-                            </div>
-                            <div class="card-content text-center" style="padding-top:0">
-                                <p class="text-justify" style="margin-bottom:0">
-                                    Ingeniero en Sistemas e Informática, con estudios en Desarrollo Experto GIS (Esri - España).
-                                </p>
-                            </div>
-                            <div class="card-content text-center" style="padding-top:0">                                
-                                    <a href="#demo2" class="btn btn-primary" data-toggle="collapse" style="color:white">
-                                        <span class="glyphicon glyphicon-chevron-down">
-                                        </span>&nbsp; Leer más ...
-                                        
+                                <div class="card-content text-center" style="padding-top:0">
+                                    <a type="button" class="btn btn-warning" href="https://HDRamosMendoza.github.io/Perfil-Profesional/" target="_blank" title="Perfil Profesional">
+                                        <span class="glyphicon glyphicon-new-window"></span>
+                                        Perfil Profesional
                                     </a>
-                                <div id="demo2" class="collapse">
-                                    <p class="text-justify">
-                                        Analista desarrollador GIS con implementaciones en visores (nativo y web appbuilder), automatizaciones de tareas SIG/GIS (python), aplicaciones web y móviles en tecnología ArcGIS.
+                                </div>
+                                <div class="card-content text-center" style="padding-top:0">
+                                    <p class="text-justify" style="margin-bottom:0">
+                                        Ingeniero en Sistemas e Informática, con estudios en Desarrollo Experto GIS (Esri - España).
                                     </p>
                                 </div>
-                            </div>
-                            <div class="card-content text-center" style="padding-top:0">                                
-                                <span class="social-share-links">
-                                    <ul class="list-inline social-buttons">
-                                        <li role="presentation" class="list-inline-item">
-                                            <a href="https://www.linkedin.com/in/HDRamosMendoza" target="_blank" title="Linkedin">
-                                                <span class="badge">
-                                                    <i class="fa fa-linkedin"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="list-inline-item">
-                                            <a href="https://twitter.com/HDRamosMendoza" target="_blank" title="Twitter">
-                                                <span class="badge">
-                                                    <i class="fa fa-twitter"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="list-inline-item">
-                                            <a href="https://github.com/HDRamosMendoza" target="_blank" title="GitHub">
-                                                <span class="badge">
-                                                    <i class="fa fa-github"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                      </ul>
-                                </span> 
-
-                                <span class="social-share-links">
-                                    <ul class="list-inline social-buttons">
-                                        <li role="presentation" class="list-inline-item">
-                                            <a href="https://www.youtube.com/channel/UCIPe6Lp_fa5ukZFhecOynnw?view_as=subscriber" target="_blank" title="YouTube">
-                                                <span class="badge">
-                                                    <i class="fa fa-youtube-play"></i>
-                                                </span>
-                                          </a>
-                                        </li>
-                                        <li role="presentation" class="list-inline-item">
-                                            <a href="https://www.instagram.com/HDRamosMendoza" target="_blank" title="Instagram">
-                                                <span class="badge">
-                                                    <i class="fa fa-instagram"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="list-inline-item">
-                                            <a href="https://www.facebook.com/HDRamosMendoza" target="_blank" title="Faceboook">
-                                                <span class="badge">
-                                                    <i class="fa fa-facebook"></i>
-                                                </span>
-                                            </a>
-                                        </li>
-                                      </ul>
-                                </span>
-                                <!--
-                                <iframe width="100%" src="https://www.youtube.com/embed/4nnOWPWt5Bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                -->
-                                <p>
-                                    <strong>[HDRamosMendoza]</strong>
-                                </p>
-                                
-                                <div class="row">    
-                                    <iframe width="100%" src="https://www.youtube.com/embed/nSMrZvi7GJ4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                                    </iframe>
+                                <div class="card-content text-center" style="padding-top:0">                                
+                                        <a href="#demo2" class="btn btn-primary" data-toggle="collapse" style="color:white">
+                                            <span class="glyphicon glyphicon-chevron-down">
+                                            </span>&nbsp; Leer más ...
+                                            
+                                        </a>
+                                    <div id="demo2" class="collapse">
+                                        <p class="text-justify">
+                                            Analista desarrollador GIS con implementaciones en visores (nativo y web appbuilder), automatizaciones de tareas SIG/GIS (python), aplicaciones web y móviles en tecnología ArcGIS.
+                                        </p>
+                                    </div>
                                 </div>
+                                <div class="card-content text-center" style="padding-top:0">                                
+                                    <span class="social-share-links">
+                                        <ul class="list-inline social-buttons">
+                                            <li role="presentation" class="list-inline-item">
+                                                <a href="https://www.linkedin.com/in/HDRamosMendoza" target="_blank" title="Linkedin">
+                                                    <span class="badge">
+                                                        <i class="fa fa-linkedin"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="list-inline-item">
+                                                <a href="https://twitter.com/HDRamosMendoza" target="_blank" title="Twitter">
+                                                    <span class="badge">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="list-inline-item">
+                                                <a href="https://github.com/HDRamosMendoza" target="_blank" title="GitHub">
+                                                    <span class="badge">
+                                                        <i class="fa fa-github"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                          </ul>
+                                    </span> 
 
-                                <div class="row">    
-                                    <iframe width="100%" src="https://www.youtube.com/embed/4nnOWPWt5Bw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                                    </iframe>
+                                    <span class="social-share-links">
+                                        <ul class="list-inline social-buttons">
+                                            <li role="presentation" class="list-inline-item">
+                                                <a href="https://www.youtube.com/channel/UCIPe6Lp_fa5ukZFhecOynnw?view_as=subscriber" target="_blank" title="YouTube">
+                                                    <span class="badge">
+                                                        <i class="fa fa-youtube-play"></i>
+                                                    </span>
+                                              </a>
+                                            </li>
+                                            <li role="presentation" class="list-inline-item">
+                                                <a href="https://www.instagram.com/HDRamosMendoza" target="_blank" title="Instagram">
+                                                    <span class="badge">
+                                                        <i class="fa fa-instagram"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="list-inline-item">
+                                                <a href="https://www.facebook.com/HDRamosMendoza" target="_blank" title="Faceboook">
+                                                    <span class="badge">
+                                                        <i class="fa fa-facebook"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                          </ul>
+                                    </span>
+                                    <!--
+                                    <iframe width="100%" src="https://www.youtube.com/embed/4nnOWPWt5Bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    -->
+                                    <p>
+                                        <strong>[HDRamosMendoza]</strong>
+                                    </p>
+                                    
+                                    <div class="row">    
+                                        <iframe width="100%" src="https://www.youtube.com/embed/nSMrZvi7GJ4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                        </iframe>
+                                    </div>
+
+                                    <div class="row">    
+                                        <iframe width="100%" src="https://www.youtube.com/embed/4nnOWPWt5Bw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
+
                 </div>
-            </div>
-            <div class="col-md-9 background-color">
-                <div class="row">
-                    <div class="secondary-nav">
-                        <ul class="nav nav-tabs" role="navigation">
-                            <li class="active">
-                                <a data-toggle="tab" href="#Pestana0">
-                                    <i class="glyphicon glyphicon-globe"></i> GIS / SIG
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana1">
-                                    <span class="glyphicon glyphicon-hdd"></span> Server
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana2">
-                                    <i class="glyphicon glyphicon-sunglasses"></i> Backend
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana3">
-                                    <span class="glyphicon glyphicon-blackboard"></span> Frontend
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana4">
-                                    <i class="glyphicon glyphicon-send"></i> GIT
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana5">
-                                    <span class="glyphicon glyphicon-book"></span> Book
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana6">
-                                    <span class="glyphicon glyphicon-inbox"></span> Community
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#Pestana7">
-                                    <span class="glyphicon glyphicon-cd"></span> Software
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="Pestana0">
-                            
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="calcite-web">
-                                    <div class="card-base card-bar-blue-darl">
-                                        <div class="card-content">
-                                            <h4>QGis</h4>
-                                            <p>
-                                                QGIS
-                                                Un Sistema de Información Geográfica libre y de Código Abierto
-                                            </p>
-                                            <a class="btn btn-default" href="https://qgis.org/es/site/">
-                                                Ingresar
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-xs-8 col-sm-8 col-md-9 background-color">
 
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="calcite-web">
-                                    <div class="card-base card-bar-blue-darl">
-                                        <div class="card-content">
-                                            <h4>ArcGIS Pro</h4>
-                                            <p>
-                                                Cree, administre y comparta mapas, datos y modelos analíticos geográficos con ArcGIS Pro. A continuación, amplíe el alcance de sus SIG a toda su organización con ArcGIS Enterprise y llévelo mucho más allá con ArcGIS Online
-                                            </p>
-                                            <a class="btn btn-default" href="https://pro.arcgis.com/es/pro-app/">
-                                                Ingresar
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="calcite-web">
-                                    <div class="card-base card-bar-blue-darl">
-                                        <div class="card-content">
-                                            <h4>ArcMap</h4>
-                                            <p>
-                                                Use ArcMap, ArcCatalog, ArcGlobe o ArcScene para crear mapas, realizar análisis espaciales, administrar datos geográficos y compartir los resultados.
-                                            </p>
-                                            <a class="btn btn-default" href="https://desktop.arcgis.com/es/arcmap/">
-                                                Ingresar
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <div class="row">
+                        <div class="secondary-nav">
+                            <ul class="nav nav-tabs" role="navigation">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#Pestana0">
+                                        <i class="glyphicon glyphicon-globe"></i> GIS / SIG
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana1">
+                                        <span class="glyphicon glyphicon-hdd"></span> Server
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana2">
+                                        <i class="glyphicon glyphicon-sunglasses"></i> Backend
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana3">
+                                        <span class="glyphicon glyphicon-blackboard"></span> Frontend
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana4">
+                                        <i class="glyphicon glyphicon-send"></i> GIT
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana5">
+                                        <span class="glyphicon glyphicon-book"></span> Book
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana6">
+                                        <span class="glyphicon glyphicon-inbox"></span> Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#Pestana7">
+                                        <span class="glyphicon glyphicon-cd"></span> Software
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="tab-pane" id="Pestana1">
-                            <div class="row">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Pestana0">
+                                
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <div class="calcite-web">
                                         <div class="card-base card-bar-blue-darl">
                                             <div class="card-content">
-                                                <h4>ArcGIS Enterprise</h4>
+                                                <h4>QGis</h4>
                                                 <p>
-                                                    Incorpore la representación cartográfica y análisis líderes del sector a su infraestructura y en la nube.
+                                                    QGIS
+                                                    Un Sistema de Información Geográfica libre y de Código Abierto
                                                 </p>
-                                                <a class="btn btn-default" href="https://enterprise.arcgis.com/es/" target="_bank">Ingresar </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-bar-blue-darl">
-                                            <div class="card-content">
-                                                <h4>Heroku</h4>
-                                                <p>
-                                                    Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.
-                                                </p>
-                                                <a class="btn btn-default" href="https://www.heroku.com/" target="_bank">Ingresar </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-bar-blue-darl">
-                                            <div class="card-content">
-                                                <h4>mLab</h4>
-                                                <p>
-                                                    mLab is the leading Database-as-a-Service for MongoDB, powering over half a million deployments worldwide.
-                                                </p>
-                                                <a class="btn btn-default" href="https://mlab.com/" target="_bank">Ingresar </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="Pestana2">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-bar-blue-darl">
-                                            <div class="card-content">
-                                                <h4>ArcGIS Pro Python</h4>
-                                                <p>
-                                                    All geoprocessing tools can be accessed from Python using ArcPy. For a full reference, including Python samples, see ArcGIS Pro Tool Reference.
-                                                </p>
-                                                <a class="btn btn-default" href="https://pro.arcgis.com/es/pro-app/arcpy/main/arcgis-pro-arcpy-reference.htm" target="_bank">Ingresar </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="Pestana3">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-bar-blue-darl">
-                                            <div class="card-content">
-                                                <h4>Colores HTML</h4>
-                                                <p>
-                                                    Obtener códigos de color HTML, códigos de color Hex, RGB y HSL valores con nuestra selección de colores, tablas de colores y nombres de colores HTML. ¡Vamonos!
-                                                </p>
-                                                <a class="btn btn-default" href="https://htmlcolorcodes.com/es/" target="_bank">Ingresar </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-bar-blue-darl">
-                                            <div class="card-content">
-                                                <h4>Iconos 8</h4>
-                                                <p>
-                                                    70,000 iconos planos gratuitos
-                                                    en cualquier tamaño, color y formato en 20 segundos
-                                                </p>
-                                                <a class="btn btn-default" href="https://iconos8.es/" target="_bank">Ingresar </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="Pestana4">
-                            
-                        </div>
-
-                        <div class="tab-pane" id="Pestana5">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        <span class="glyphicon glyphicon-bookmark">
-                                        </span>
-                                        <p>
-                                            <em>
-                                                Manual de prácticas de topografía y cartografía
-                                            </em>
-                                        </p>
-                                        <a class="btn btn-warning pull-right" href="http://www.tysmagazine.com/libro-gratuito-manual-practicas-topografia-cartografia/" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>
-                                </div>
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        <span class="glyphicon glyphicon-bookmark">
-                                        </span>
-                                        <p>
-                                            <em>
-                                                Manual práctico para el despliegue y manejo de información cartográfica
-                                            </em>
-                                        </p>
-                                        <a class="btn btn-warning pull-right" href="http://www.tysmagazine.com/manual-practico-para-el-despliegue-y-manejo-de-informacion-cartografica/" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="Pestana6">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-wide">
-                                            <div class="card-wide-image-wrap">
-                                                <img alt="Bridge Club, 1954" class="card-wide-image" src="./img/community/geonet.png">
-                                                <div class="card-image-caption">
-                                                    Esri Community
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h4>
-                                                    <a href="https://community.esri.com/welcome" target="_bank">
-                                                        Welcome to GeoNet, the Esri Community!
-                                                    </a>
-                                                </h4>
-                                                <p>GeoNet is where the Esri Community—customers, partners, Esri staff, and others in the GIS and geospatial professional community—connect, collaborate and share experiences. We invite you to join the conversation!</p>
-                                                <p>GeoNet Communities.</p><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12">
-                                    <div class="calcite-web">
-                                        <div class="card-base card-wide">
-                                            <div class="card-wide-image-wrap">
-                                                <img alt="Bridge Club, 1954" class="card-wide-image" src="./img/community/makerlab.png">
-                                                <div class="card-image-caption">
-                                                    MakerLab Community
-                                                </div>
-                                            </div>
-                                            <div class="card-content">
-                                                <h4>
-                                                    <a href="https://www.makerlabperu.org/"  target="_bank">
-                                                        Welcome Makerlab Community!
-                                                    </a>
-                                                </h4>
-                                                <p>
-                                                    Comunidad para: <br>
-                                                    > Aprender - Enseñar - Compartir Tecnología
-                                                </p>
-                                                <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>   
-                        </div>
-
-                        <div class="tab-pane" id="Pestana7">
-                            <div class="page-header">
-                                <h1>
-                                    Software
-                                </h1>
-                            </div>
-                            <div class="page-header">
-                                <h4>
-                                    Git
-                                </h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            Git (Mac OS X - Windows - Linux/Unix)
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="https://git-scm.com/downloads" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>           
-                                </div>
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        <div class="row">
-                                            <div class="col-md-6 text-center">
-                                                <a type="button" class="btn btn-warning btn-block" href="https://about.gitlab.com/2018/06/03/movingtogitlab/" target="_bank">
-                                                    <i class="fa fa-gitlab"></i>
-                                                    GitLab
-                                                </a>
-                                            </div>
-                                            <div class="col-md-6 text-center">
-                                                <a type="button" class="btn btn-warning btn-block" href="https://github.com/" target="_bank">
-                                                    <i class="fa fa-github"></i>
-                                                    GitHub
+                                                <a class="btn btn-default" href="https://qgis.org/es/site/">
+                                                    Ingresar
                                                 </a>
                                             </div>
                                         </div>
-                                    </blockquote>
+                                    </div>
                                 </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="calcite-web">
+                                        <div class="card-base card-bar-blue-darl">
+                                            <div class="card-content">
+                                                <h4>ArcGIS Pro</h4>
+                                                <p>
+                                                    Cree, administre y comparta mapas, datos y modelos analíticos geográficos con ArcGIS Pro. A continuación, amplíe el alcance de sus SIG a toda su organización con ArcGIS Enterprise y llévelo mucho más allá con ArcGIS Online
+                                                </p>
+                                                <a class="btn btn-default" href="https://pro.arcgis.com/es/pro-app/">
+                                                    Ingresar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="calcite-web">
+                                        <div class="card-base card-bar-blue-darl">
+                                            <div class="card-content">
+                                                <h4>ArcMap</h4>
+                                                <p>
+                                                    Use ArcMap, ArcCatalog, ArcGlobe o ArcScene para crear mapas, realizar análisis espaciales, administrar datos geográficos y compartir los resultados.
+                                                </p>
+                                                <a class="btn btn-default" href="https://desktop.arcgis.com/es/arcmap/">
+                                                    Ingresar
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="page-header">
-                                <h4>
-                                    Database
-                                </h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            Oracle Express Edition 11g
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>           
-                                </div>
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            SQL Server 2017 Express
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="https://www.microsoft.com/es-es/sql-server/sql-server-editions-express" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            PostgrsSQL
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="https://www.postgresql.org/download/" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>           
-                                </div>
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            PostGIS
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="https://postgis.net/install/" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>
+
+                            <div class="tab-pane" id="Pestana1">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>ArcGIS Enterprise</h4>
+                                                    <p>
+                                                        Incorpore la representación cartográfica y análisis líderes del sector a su infraestructura y en la nube.
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://enterprise.arcgis.com/es/" target="_bank">Ingresar </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>Heroku</h4>
+                                                    <p>
+                                                        Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps.
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://www.heroku.com/" target="_bank">Ingresar </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>mLab</h4>
+                                                    <p>
+                                                        mLab is the leading Database-as-a-Service for MongoDB, powering over half a million deployments worldwide.
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://mlab.com/" target="_bank">Ingresar </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="page-header">
-                                <h4>
-                                    ESRI
-                                </h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            ArcObject SDK for Framework 10.3
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="https://mega.nz/#!GpIlhBSa!2PA4T_m3yYg6zuD1TwRsdErNDUD07jKrv6y2Uro4EIo" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>           
+                            <div class="tab-pane" id="Pestana2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>ArcGIS Pro Python</h4>
+                                                    <p>
+                                                        All geoprocessing tools can be accessed from Python using ArcPy. For a full reference, including Python samples, see ArcGIS Pro Tool Reference.
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://pro.arcgis.com/es/pro-app/arcpy/main/arcgis-pro-arcpy-reference.htm" target="_bank">Ingresar </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <blockquote>
-                                        &nbsp;    
-                                        <p class="pull-left">
-                                            ArcObject SDK for Framework 10.4.1
-                                        </p>
-                                        <a class="btn btn-default pull-right" href="https://mega.nz/#!6kABUCjY!ITzlX311crBG2sRRQfaWxa9P8vlqBTzG0sP4ccz5GEo" target="_bank">
-                                            Descargar
-                                        </a>
-                                    </blockquote>
+                            </div>
+
+                            <div class="tab-pane" id="Pestana3">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>Colores HTML</h4>
+                                                    <p>
+                                                        Obtener códigos de color HTML, códigos de color Hex, RGB y HSL valores con nuestra selección de colores, tablas de colores.
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://htmlcolorcodes.com/es/" target="_bank">Ingresar </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content text-justify">
+                                                    <h4>Iconos 8</h4>
+                                                    <p>
+                                                        70,000 iconos planos gratuitos: Color, tamaño y formato en 20 segundos (iOS, Windows, Android). Diseñadores de interfaces y programadores.
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://iconos8.es/" target="_bank">
+                                                        Ingresar
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>Herramientas CSS</h4>
+                                                    <p>
+                                                        1. Editor de sombras.<br>
+                                                        2. Textura suciedad.<br>
+                                                        3. Bordes redondeados.<br>
+                                                        4. Editor gradientes.<br>
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://www.cssmatic.com/es/box-shadow" target="_bank">
+                                                        Ingresar
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content">
+                                                    <h4>Dojo Toolkit</h4>
+                                                    <p>
+                                                        1. Get Dojo.<br>
+                                                        2. Docs.<br>
+                                                        3. Community.<br>
+                                                        4. Blog.<br>
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://dojotoolkit.org/" target="_bank">Ingresar </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-bar-blue-darl">
+                                                <div class="card-content text-justify">
+                                                    <h4>AMCHARTS</h4>
+                                                    <p>
+                                                        1. JavaScript Charts.<br>
+                                                        2. JavaScript Stock Chart.<br>
+                                                        3. JavaScript Maps.<br>
+                                                        4. amCharts V3 Class Reference.<br>
+                                                    </p>
+                                                    <a class="btn btn-default" href="https://www.amcharts.com/download/" target="_bank">
+                                                        Ingresar
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="Pestana4">
+                                
+                            </div>
+
+                            <div class="tab-pane" id="Pestana5">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            <span class="glyphicon glyphicon-bookmark">
+                                            </span>
+                                            <p>
+                                                <em>
+                                                    Manual de prácticas de topografía y cartografía
+                                                </em>
+                                            </p>
+                                            <a class="btn btn-warning pull-right" href="http://www.tysmagazine.com/libro-gratuito-manual-practicas-topografia-cartografia/" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            <span class="glyphicon glyphicon-bookmark">
+                                            </span>
+                                            <p>
+                                                <em>
+                                                    Manual práctico para el despliegue y manejo de información cartográfica
+                                                </em>
+                                            </p>
+                                            <a class="btn btn-warning pull-right" href="http://www.tysmagazine.com/manual-practico-para-el-despliegue-y-manejo-de-informacion-cartografica/" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="Pestana6">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-wide">
+                                                <div class="card-wide-image-wrap">
+                                                    <img alt="Bridge Club, 1954" class="card-wide-image" src="./img/community/geonet.png">
+                                                    <div class="card-image-caption">
+                                                        Esri Community
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4>
+                                                        <a href="https://community.esri.com/welcome" target="_bank">
+                                                            Welcome to GeoNet, the Esri Community!
+                                                        </a>
+                                                    </h4>
+                                                    <p>GeoNet is where the Esri Community—customers, partners, Esri staff, and others in the GIS and geospatial professional community—connect, collaborate and share experiences. We invite you to join the conversation!</p>
+                                                    <p>GeoNet Communities.</p><span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <div class="calcite-web">
+                                            <div class="card-base card-wide">
+                                                <div class="card-wide-image-wrap">
+                                                    <img alt="Bridge Club, 1954" class="card-wide-image" src="./img/community/makerlab.png">
+                                                    <div class="card-image-caption">
+                                                        MakerLab Community
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <h4>
+                                                        <a href="https://www.makerlabperu.org/"  target="_bank">
+                                                            Welcome Makerlab Community!
+                                                        </a>
+                                                    </h4>
+                                                    <p>
+                                                        Comunidad para: <br>
+                                                        > Aprender - Enseñar - Compartir Tecnología
+                                                    </p>
+                                                    <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span> <span class="glyphicon glyphicon-star-empty"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>   
+                            </div>
+
+                            <div class="tab-pane" id="Pestana7">
+                                <div class="page-header">
+                                    <h1>
+                                        Software
+                                    </h1>
+                                </div>
+                                <div class="page-header">
+                                    <h4>
+                                        Git
+                                    </h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                Git (Mac OS X - Windows - Linux/Unix)
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="https://git-scm.com/downloads" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>           
+                                    </div>
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-md-6 text-center">
+                                                    <a type="button" class="btn btn-warning btn-block" href="https://about.gitlab.com/2018/06/03/movingtogitlab/" target="_bank">
+                                                        <i class="fa fa-gitlab"></i>
+                                                        GitLab
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <a type="button" class="btn btn-warning btn-block" href="https://github.com/" target="_bank">
+                                                        <i class="fa fa-github"></i>
+                                                        GitHub
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="page-header">
+                                    <h4>
+                                        Database
+                                    </h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                Oracle Express Edition 11g
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>           
+                                    </div>
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                SQL Server 2017 Express
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="https://www.microsoft.com/es-es/sql-server/sql-server-editions-express" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                PostgrsSQL
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="https://www.postgresql.org/download/" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>           
+                                    </div>
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                PostGIS
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="https://postgis.net/install/" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                                <div class="page-header">
+                                    <h4>
+                                        ESRI
+                                    </h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                ArcObject SDK for Framework 10.3
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="https://mega.nz/#!GpIlhBSa!2PA4T_m3yYg6zuD1TwRsdErNDUD07jKrv6y2Uro4EIo" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>           
+                                    </div>
+                                    <div class="col-md-6">
+                                        <blockquote>
+                                            &nbsp;    
+                                            <p class="pull-left">
+                                                ArcObject SDK for Framework 10.4.1
+                                            </p>
+                                            <a class="btn btn-default pull-right" href="https://mega.nz/#!6kABUCjY!ITzlX311crBG2sRRQfaWxa9P8vlqBTzG0sP4ccz5GEo" target="_bank">
+                                                Descargar
+                                            </a>
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <div id="AdvertenciaModal" class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">x</span></button>
-                    <h4 class="modal-title">En construcción y actualización ... </h4>
-                </div>
-                <div class="modal-body">
-                    <p>Mi espacio de trabajo (Work Space) está enfocado a tener acceso a mis recursos que desarrollo en mi día a día. Es de uso personal sin embargo esta abierto para su consulta.</p>
-                    <p>
-                        Atte: Ing. <u>Daniel</u> Ramos Mendoza
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal" type="button">Cerrar</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    <script type="application/javascript" src="./bower-dependency/jquery/dist/jquery.min.js"></script>
-    <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-        $(function(){
-            $("#AdvertenciaModal").modal();
-        });
-    </script>    
-    <!-- jQuery 
-    <script src="js/jquery.js"></script>-->
 
-    <!-- Bootstrap Core JavaScript 
-    <script src="js/bootstrap.min.js"></script>-->
+        <div id="AdvertenciaModal" class="modal fade" role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">x</span></button>
+                        <h4 class="modal-title">En construcción y actualización ... </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mi espacio de trabajo (Work Space) está enfocado a tener acceso a mis recursos que desarrollo en mi día a día. Es de uso personal sin embargo esta abierto para su consulta.</p>
+                        <p>
+                            Atte: Ing. <u>Daniel</u> Ramos Mendoza
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Cerrar</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
 
-</body>
+        <script type="application/javascript" src="./bower-dependency/jquery/dist/jquery.min.js">
+        </script>
+
+        <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+
+        <script>
+            $(function(){
+                $("#AdvertenciaModal").modal();
+            });
+        </script>    
+    </body>
 
 </html>
